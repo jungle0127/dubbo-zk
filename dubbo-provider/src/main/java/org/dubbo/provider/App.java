@@ -18,6 +18,7 @@ public class App
         System.out.println("服务已经启动...");
         try {
 			System.in.read();
+			context.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
