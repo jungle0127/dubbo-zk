@@ -11,12 +11,10 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.10.RELEASE</version>
-	</parent>
-
+	</parent>	
 	<modules>
-		<module>dubbo-api</module>
-		<module>dubbo-provider</module>
-		<module>dubbo-consumer</module>
-		<module>dubbo-boot-provider</module>
+		<module>springbootdubboserver</module>
+		<module>springbootdubboclient</module>
+		<module>springbootdubboapi</module>
 	</modules>
 </project>
