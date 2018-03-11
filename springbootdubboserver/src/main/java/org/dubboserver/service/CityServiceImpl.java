@@ -5,7 +5,10 @@ import org.dubboapi.domain.City;
 
 import com.alibaba.dubbo.config.annotation.Service;
 
-@Service(timeout=5000, version="1.0.0")
+@Service(timeout=5000, 
+	version="1.0.0",
+	application="${dubbo.application.id}",
+	registry="${dubbo.registry.id}")
 public class CityServiceImpl implements CityService {
 
 	@Override
