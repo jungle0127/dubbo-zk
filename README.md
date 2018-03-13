@@ -15,3 +15,6 @@ https://github.com/nomico271/DatatablesDemo
 			<version>1.0.2</version>
 		</dependency>
 		https://github.com/alibaba/dubbo-spring-boot-starter
+		
+分布式服务讲解：
+http://blog.csdn.net/hopeztm/article/details/52497323
