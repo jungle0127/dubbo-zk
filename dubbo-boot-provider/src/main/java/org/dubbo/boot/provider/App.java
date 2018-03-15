@@ -3,10 +3,10 @@ package org.dubbo.boot.provider;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
+import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 
 @SpringBootApplication
-@DubboComponentScan(basePackages="org.dubbo.boot.provider.service")
+@EnableDubboConfiguration
 public class App 
 {
     public static void main( String[] args ) {

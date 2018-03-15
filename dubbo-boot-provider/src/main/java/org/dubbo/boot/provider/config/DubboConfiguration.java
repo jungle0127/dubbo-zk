@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
 
-@Configuration
+//@Configuration
 public class DubboConfiguration {
 	@Bean
 	public ApplicationConfig applicationConfig() {

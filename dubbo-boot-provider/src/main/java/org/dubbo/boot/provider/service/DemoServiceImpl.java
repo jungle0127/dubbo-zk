@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.dubbo.api.DemoService;
+import org.springframework.stereotype.Component;
 
 import com.alibaba.dubbo.config.annotation.Service;
 
-@Service(timeout=5000)
+@Service(timeout=5000, interfaceClass=DemoService.class)
+@Component
 public class DemoServiceImpl implements DemoService {
 
 	@Override
