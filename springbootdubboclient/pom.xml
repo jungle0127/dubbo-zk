@@ -13,6 +13,8 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<swaggerfox.version>2.7.0</swaggerfox.version>
+		<io.swagger.version>1.5.15</io.swagger.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -28,6 +30,17 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${swaggerfox.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${swaggerfox.version}</version>
 		</dependency>
 
 		<dependency>
