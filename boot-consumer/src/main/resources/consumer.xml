@@ -10,7 +10,7 @@
 	<dubbo:application name="dubbo-consumer" owner="dubbo-consumer" />
 	<!-- 定义 zookeeper 注册中心地址及协议 -->
 	<dubbo:registry address="zookeeper://127.0.0.1:2181" />
-	<dubbo:protocol port="20880" />
+	<dubbo:protocol name="dubbo" port="20880"/>
 	<!-- 生成远程服务代理，可以和本地 bean 一样使用 testService -->
 	<dubbo:reference id="demoService"
 		interface="com.ps.dubbo.api.DemoService" />
