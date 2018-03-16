@@ -3,7 +3,7 @@ package org.dubbo.provider;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.dubbo.api.DemoService;
+import com.ps.dubbo.api.DemoService;
 
 public class DemoServiceImpl implements DemoService {
 

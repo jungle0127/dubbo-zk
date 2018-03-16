@@ -2,10 +2,10 @@ package org.dubbo.boot.consumer.service;
 
 import java.util.List;
 
-import org.dubbo.api.DemoService;
 import org.springframework.stereotype.Service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.ps.dubbo.api.DemoService;
 
 @Service
 public class DubboServiceHandler {

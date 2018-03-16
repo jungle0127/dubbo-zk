@@ -1,7 +1,8 @@
 package org.dubbo.consumer;
 
-import org.dubbo.api.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.ps.dubbo.api.DemoService;
 
 /**
  * Hello world!

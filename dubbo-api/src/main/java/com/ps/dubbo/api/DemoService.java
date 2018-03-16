@@ -1,4 +1,4 @@
-package org.dubbo.api;
+package com.ps.dubbo.api;
 
 import java.util.List;
 

@@ -3,10 +3,10 @@ package org.dubbo.boot.provider.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.dubbo.api.DemoService;
 import org.springframework.stereotype.Component;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.ps.dubbo.api.DemoService;
 
 @Service(timeout=5000, interfaceClass=DemoService.class)
 @Component

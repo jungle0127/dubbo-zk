@@ -3,9 +3,8 @@ package com.ps.provider.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.dubbo.api.DemoService;
-
 import com.alibaba.dubbo.config.annotation.Service;
+import com.ps.dubbo.api.DemoService;
 
 @Service(version = "1.0.0", application = "${dubbo.application.id}",
     protocol = "${dubbo.protocol.id}", registry = "${dubbo.registry.id}")
