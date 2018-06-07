@@ -18,5 +18,6 @@
 		<module>dubbo-consumer</module>
 		<module>dubbo-boot-provider</module>
     <module>dubbo-boot-consumer</module>
-  </modules>
+    <module>mqttdubboclient</module>
+	</modules>
 </project>

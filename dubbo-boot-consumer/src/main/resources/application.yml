@@ -1,7 +1,0 @@
-server:
-  context-path: /dubbo
-  port: 8081
-  
-spring:
-  application:
-    name: dubbo-spring-boot-starter
