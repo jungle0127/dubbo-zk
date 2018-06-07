@@ -1,3 +1,3 @@
 # dubbodemo
 
-https://github.com/nomico271/DatatablesDemo
+This is a demo for dubbo with spring xml configuration
