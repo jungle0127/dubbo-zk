@@ -6,9 +6,7 @@ import org.springframework.stereotype.Component;
 
 import com.alibaba.dubbo.config.annotation.Service;
 
-@Service(timeout=5000, 
-	version="1.0.0",
-	interfaceClass=CityService.class)
+@Service(version = "${demo.service.version}", application = "${dubbo.application.id}", protocol = "${dubbo.protocol.id}", registry = "${dubbo.registry.id}")
 @Component
 public class CityServiceImpl implements CityService {
 

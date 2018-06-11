@@ -21,7 +21,11 @@
 			<artifactId>springbootdubboapi</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-
+		<!-- spring boot -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -30,18 +34,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
-
-		<!-- 
 		<dependency>
-			<groupId>io.dubbo.springboot</groupId>
-			<artifactId>spring-boot-starter-dubbo</artifactId>
-			<version>${springboot.dubbo.version}</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		 -->
+		<!-- dubbo spring boot -->
 		<dependency>
-			<groupId>com.alibaba.spring.boot</groupId>
+			<groupId>com.alibaba.boot</groupId>
 			<artifactId>dubbo-spring-boot-starter</artifactId>
-			<version>${springboot.dubbo.version}</version>
+			<version>0.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.boot</groupId>
+			<artifactId>dubbo-spring-boot-actuator</artifactId>
+			<version>0.1.0</version>
 		</dependency>
 	</dependencies>
 </project>
