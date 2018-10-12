@@ -13,10 +13,8 @@
 	</parent>
 
 	<modules>
-		<module>dubbo-api</module>
-		<module>dubbo-provider</module>
-		<module>dubbo-consumer</module>
+		<module>dubbo-api</module>		
 		<module>dubbo-boot-provider</module>
-    <module>dubbo-boot-consumer</module>
-  </modules>
+		<module>dubbo-boot-consumer</module>
+	</modules>
 </project>
