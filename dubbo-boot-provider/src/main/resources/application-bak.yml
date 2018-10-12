@@ -1,0 +1,40 @@
+# Springboot application  configuration
+
+server:
+  port: 8080
+spring:
+  application:
+    name: dubbo-provider-demo
+dubbo:
+  scan:
+    base-packages: com.ps.dubbo.provider.service
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 21810
+    status: server
+  application:
+    id: demo-dubbo-provider
+    name: demo-dubbo-provider
+    qos-port: 21811
+    qos-enable: true
+  registry:
+    id: zk-demo
+    address: zookeeper://localhost:2181
+management:
+  endpoint:
+    dubbo:
+      enabled: true
+    dubbo-shutdown:
+      enabled: true
+    dubbo-configs:
+      enabled: true
+    dubbo-services:
+      enabled: true
+    dubbo-references:
+      enabled: true
+    dubbo-properties:
+      enabled: true
+demo:
+  service:
+    version: 1.0.0
