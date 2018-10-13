@@ -7,7 +7,7 @@ spring:
     name: dubbo-provider-demo
 dubbo:
   scan:
-    base-packages: com.ps.dubbo.provider.service
+    basePackages: com.ps.dubbo.provider.service
   protocol:
     id: dubbo
     name: dubbo
@@ -35,6 +35,12 @@ management:
       enabled: true
     dubbo-properties:
       enabled: true
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: load,threadpool
+
 demo:
   service:
     version: 1.0.0
