@@ -45,7 +45,9 @@
 		<module>dubbo-api</module>		
 		<module>dubbo-boot-provider</module>
 		<module>dubbo-boot-consumer</module>
-	</modules>
+		<module>springboot-dubbo-provider-without-starter</module>
+        <module>springboot-dubbo-consumer-without-starter</module>
+    </modules>
 	<build>
 		<plugins>
 			<plugin>
