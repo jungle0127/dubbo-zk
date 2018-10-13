@@ -1,7 +1,48 @@
 server:
-  context-path: /dubbo
   port: 8081
+  servlet:
+    context-path: /dubbo
   
 spring:
   application:
     name: dubbo-spring-boot-starter
+
+dubbo:
+  application:
+    id: demo-dubbo-consumer
+    name: demo-dubbo-consumer
+    qos:
+      port: 9030
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 21810
+
+endpoints:
+  dubbo:
+    enabled: true
+
+management:
+  server:
+    port: 9090
+#  endpoint:
+#    web:
+#      exposure:
+#        include: *
+    dubbo:
+      enabled: true
+    dubbo-shutdown:
+      enabled: true
+    dubbo-configs:
+      enabled: true
+    dubbo-services:
+      enabled: true
+    dubbo-references:
+      enabled: true
+    dubbo-properties:
+      enabled: true
+  health:
+    dubbo:
+      status:
+        defaults: memory
+

@@ -1,9 +1,9 @@
-package org.dubbo.boot.consumer.controller;
+package com.ps.dubbo.consumer.controller;
 
 import java.util.List;
 
-import org.dubbo.boot.consumer.service.DubboServiceHandler;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.ps.dubbo.api.DemoService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,11 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value="/consumer")
 public class ConsumerController {
-  @Autowired
-  private DubboServiceHandler handler;
+  @Reference(
+          version = "1.0.0",
+          application = "${dubbo.application.id}",
+          url = "dubbo://127.0.0.1:21810"
+  )
+  private DemoService demoService;
   
   @GetMapping("/city")
   public List<String> getCity() {
-    return this.handler.getCity();
+    return demoService.getPermissions(1L);
   }
 }

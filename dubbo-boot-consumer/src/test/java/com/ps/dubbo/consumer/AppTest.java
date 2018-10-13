@@ -1,4 +1,4 @@
-package org.dubbo.boot.consumer;
+package com.ps.dubbo.consumer;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

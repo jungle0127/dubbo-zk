@@ -1,10 +1,7 @@
-package org.dubbo.boot.consumer;
+package com.ps.dubbo.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
-
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
@@ -13,7 +10,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @SpringBootApplication
 @EnableSwagger2
-@EnableDubboConfiguration
 public class App {
   public static void main(String[] args) {
     SpringApplication.run(App.class, args);

@@ -5,4 +5,4 @@
  * @author Administrator
  *
  */
-package org.dubbo.boot.consumer.controller;
+package com.ps.dubbo.consumer.controller;
